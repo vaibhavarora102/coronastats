@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128+Text&display=swap" rel="stylesheet">
+    <title>COVID-19 STATISTICS</title>
+
+
+    
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo1.jpg" alt="">
+            <p>COVID-19 STATS</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="stats">
+            <div class="latest-report">
+                <div class="country">
+                    <div class="name">Loading...</div>
+                    <div class="change-country">Change</div>
+                    <div class="search-country">
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search Country....">
+                            <img class="close" src="close.jpg" alt="">
+                        </div>
+                        <div class="country-list">
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="total-cases">
+                    <div class="title">TOTAL CASES</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+                <div class="recovered">
+                    <div class="title">RECOVERED</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+                <div class="deaths">
+                    <div class="title">DEATHS</div>
+                    <div class="value">0</div>
+                    <div class="new-value">+0</div>
+                </div>
+            </div>
+            <div class="chart">
+                <canvas id="axes_line_chart"></canvas>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">
+                <p>COVID-19 UPDATES</p>
+            </div>
+        </div>
+
+    </footer>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <!--<script src="chart.js"></script>-->
+
+    <script language="JavaScript" src="http://www.geoplugin.net/javascript.gp" type="text/javascript"></script>
+    <script src="countries.js"></script>
+    <script src="app.js"></script>
+    
+ </body>
+</html>
